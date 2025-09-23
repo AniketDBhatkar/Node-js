@@ -8,6 +8,6 @@ const router=express.Router()
 router.get("/",getHomedata)
 router.get("/about",getAboutdata)
 
-router.post("/submit-from",postSubmitForm)
+router.post("/submit-form",postSubmitForm)
 
 export default router
