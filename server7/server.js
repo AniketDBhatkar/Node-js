@@ -10,6 +10,8 @@ let port = process.env.PORT || 5005
 
 app.use(express.urlencoded({ extended: true }))
 
+app.use(express.json())
+
 app.use(express.static("public"))
 
 app.use("/languages/api", router)
